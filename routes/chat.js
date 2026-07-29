@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
     }
 
     const completion = await groq.chat.completions.create({
-      model: 'llama3-8b-8192',
+      model: 'llama-3.1-8b-instant',
       messages: [
         { role: 'system', content: 'Eres Kana, un robot de escritorio amigable y divertido. Responde con frases cortas y con emojis. Máximo 30 palabras.' },
         { role: 'user', content: mensaje }
